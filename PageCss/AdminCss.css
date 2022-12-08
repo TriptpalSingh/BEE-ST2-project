@@ -1,0 +1,26 @@
+body{
+    font-family: Raleway;
+}
+
+#h{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.first_row{
+    border: solid 1px black;
+}
+
+.odd{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.even{
+    text-align: center;
+}
+
+#main-table{
+    background-color:white;
+    font-size: 30px;
+}

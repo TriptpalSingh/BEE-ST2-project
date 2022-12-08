@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PageCss/AdminCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2 id="h">USER INFORMATION</h2>
+    <div id="main-div">
+    <table id="main-table">
+        <tr>
+            <th class="first_row">Username</th>
+            <th class="first_row">Password</th>
+            <th class="first_row">Father Name</th>
+            <th class="first_row">Phone Number</th>
+            <th class="first_row">Gender</th>
+            <th class="first_row">Address</th>
+        </tr>
+        <% for(var i=0; i<result.length; i++) { 
+            if(i%2 == 0){ %>
+                <tr>
+                    <td class="odd"><%= result[i].Username %></td>
+                    <td class="odd"><%= result[i].Password %></td>
+                    <td class="odd"><%= result[i].FatherName %></td>
+                    <td class="odd"><%= result[i].PhoneNumber %></td>
+                    <td class="odd"><%= result[i].Gender %></td>
+                    <td class="odd"><%= result[i].Address %></td>
+                </tr>
+           <% }
+           else{ %>
+            <tr>
+                <td class="even"><%= result[i].Username %></td>
+                <td class="even"><%= result[i].Password %></td>
+                <td class="even"><%= result[i].FatherName %></td>
+                <td class="even"><%= result[i].PhoneNumber %></td>
+                <td class="even"><%= result[i].Gender %></td>
+                <td class="even"><%= result[i].Address %></td>
+            </tr>
+         <%  } 
+            
+         } %> 
+    </table>
+    </div>
+    <!-- <h1>This is Admin Page</h1> -->
+</body>
+</html>

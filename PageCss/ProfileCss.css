@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(31, 16, 75, 0.5), rgba(255, 184, 244, 0.5) );
+    font-family: Raleway;
+}
+
+#outer-div{
+    margin: auto;
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+} 
+
+#inner-div{
+    margin: auto;
+    width: 40%;
+    background-color: white;
+    /* border: 5px solid black; */
+    box-shadow: 0px 0px 15px white;
+    border-radius: 10px;
+    height:50vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#headingtxt{
+    font-size: 50px;
+    text-align: center;
+    font-family: Raleway;
+    text-decoration: underline;
+}
+
+#profiletxt{
+    font-size: 20px;
+    text-align: center;
+    font-family: Raleway;
+}
+
+#spanbtn{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#btn{
+    padding: 10px;
+    color:rgb(76, 83, 82);
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 250px;
+    font-size: 18px;
+    font-family: Raleway;
+    background-image: linear-gradient(to right, rgba(113, 86, 189, 0.5), rgba(255, 184, 244, 0.5) );
+    border-radius:5px;
+    cursor: pointer;
+}
